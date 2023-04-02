@@ -1,0 +1,16 @@
+output
+start
+end
+1
+2
+
+Explained
+The first console.log('start') statement will be executed immediately when the code is run and will print 'start' to the console.
+
+Two promises are then created using Promise.resolve. These promises will resolve immediately with a value of 1 and 2, respectively.
+
+The first promise has a then method attached to it which will be executed asynchronously when the promise resolves. The then method will log the value of 1 to the console.
+
+The second promise also has a then method attached to it which will be executed asynchronously when the promise resolves. The then method will log the value of 2 to the console.
+
+Finally, the last console.log('end') statement will be executed immediately after the promises are created and will print 'end' to the console.

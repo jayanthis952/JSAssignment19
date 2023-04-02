@@ -1,0 +1,12 @@
+OutPut
+Error: The Fails!
+undefined
+
+Explained
+The code creates a new Promise object p with a callback function that immediately calls reject with an Error object containing the string 'The Fails!'.
+
+Then, the catch method is called on the p Promise object, which sets a callback function to be called when the Promise is rejected. The callback function simply logs the error object to the console.
+
+Finally, the then method is called on the p Promise object, which sets a callback function to be called when the Promise is resolved or rejected. Since the Promise was rejected, this then callback function is called with the value undefined as its argument, which is then logged to the console
+
+Therefore, the first line of output is the error message "Error: The Fails!" that was logged by the catch callback function. The second line of output is undefined, which was logged by the then callback function

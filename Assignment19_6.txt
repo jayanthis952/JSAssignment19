@@ -1,0 +1,8 @@
+OutPut
+Success
+
+Explained:
+The Promise.resolve('Success!') creates a new promise that is immediately resolved with the string value 'Success!'.
+The first then() method is chained to the promise and receives the resolved value ('Success!') as its argument. It returns the value after converting it to uppercase using the toUpperCase() method.
+The second then() method is chained to the first one and receives the converted value ('SUCCESS') as its argument. It logs the value to the console using the console.log() method.
+So, the final output of the program is the uppercase string value 'SUCCESS'.

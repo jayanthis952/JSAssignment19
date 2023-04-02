@@ -1,0 +1,11 @@
+OutPut is 
+2
+4
+undefined
+8
+
+A new promise is created with a resolved value of 2 and assigned to the variable promise.
+The then method is called on promise, which logs the value 2 to the console and returns the value multiplied by 2 (resulting in 4).
+Another then method is called on the previous promise chain, which logs the value 4 to the console and returns the value multiplied by 2 (resulting in 8).
+The finally method is called on the previous promise chain, which logs undefined to the console, as it doesn't receive any arguments or return any values.
+The final then method is called on the previous promise chain, which logs the value 8 to the console.

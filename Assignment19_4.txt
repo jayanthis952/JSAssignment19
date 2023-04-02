@@ -1,0 +1,17 @@
+OutPut
+start
+middle
+1
+success
+end
+
+Explained:
+The string "start" is logged to the console using console.log('start').
+The arrow function fn is defined using the const keyword.
+The string "middle" is logged to the console using console.log('middle').
+The fn function is called using fn().then().
+The function fn logs the number 1 to the console using console.log(1).
+The resolve function is called with the argument "success", which means the Promise is fulfilled.
+The then method is called on the Promise returned by fn().
+The callback function passed to then logs the value of res ("success") to the console using console.log(res).
+The string "end" is logged to the console using console.log('end')

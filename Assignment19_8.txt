@@ -1,0 +1,21 @@
+OutPut
+
+start
+end
+resolve
+setTimeout
+
+
+Explained:
+
+The code first logs 'start' and then sets up a setTimeout function with a delay of 0 milliseconds.
+Next, a Promise is resolved with then() method which logs 'resolve'. Since Promises are resolved asynchronously, this statement is added to the microtask queue and executed after the current task is completed.
+Then 'end' is logged.
+Once the current task is completed, the event loop checks the microtask queue and executes the resolved Promise, which logs 'resolve'.
+Finally, the setTimeout callback is executed and logs 'setTimeout'.
+Note that the setTimeout delay of 0 milliseconds doesn't necessarily mean that it will execute immediately, but instead it will be queued after the current task and any pending microtasks.
+
+
+
+
+
